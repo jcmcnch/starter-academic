@@ -1,41 +1,49 @@
-+++
-# A Skills section created with the Featurette widget.
-widget = "featurette"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
-weight = 30  # Order that this section will appear.
+---
+# An instance of the Featurette widget.
+# Documentation: https://wowchemy.com/docs/page-builder/
+widget: featurette
 
-title = "Skills"
-subtitle = ""
+# This file represents a page section.
+headless: true
+
+# Order that this section appears on the page.
+weight: 30
+
+title: Skills
+subtitle:
 
 # Showcase personal skills or business features.
-# 
-# Add/remove as many `[[feature]]` blocks below as you like.
-# 
-# For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
+# - Add/remove as many `feature` blocks below as you like.
+# - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
+feature:
+- description: Data analysis & munging, bash / python / snakemake pipeline construction.
+  icon: laptop-code
+  icon_pack: fas
+  name: Bioinformatics
+- description: Fluorescence *in situ* hybridization, SSU rRNA Barcoding (16S & 18S), (meta / single-cell / pan)-genomics
+  icon: dna 
+  icon_pack: fas
+  name: Full Cycle rRNA Analysis / Meta'omics
+- description: High-pressure cultivation experience for deep-sea samples on 3 NSF-funded cruises.
+  icon: ship
+  icon_pack: fas
+  name: Cruise / Field Work 
+- description: Anoxic/microoxic chemostat methods development; high-throughput isolation of novel chemoautotrophs and roseobacters.
+  icon: flask
+  icon_pack: fas
+  name: Cultivation Experience
 
-[[feature]]
-  icon = "fa-python"
-  icon_pack = "fab"
-  name = "Bioinformatics / Scripting"
-  description = "Data analysis & munging, bash / snakemake pipeline construction."
-  
-[[feature]]
-  icon = "fa-dna"
-  icon_pack = "fas"
-  name = "Molecular Methods"
-  description = "CARD-FISH, SSU rRNA tag sequencing, 'omics"
+# Uncomment to use emoji icons.
+#- icon: ":smile:"
+#  icon_pack: "emoji"
+#  name: "Emojiness"
+#  description: "100%"  
 
-[[feature]]
-  icon = "fa-flask"
-  icon_pack = "fas"
-  name = "Cultivation Experience"
-  description = "Anoxic/microoxic chemostat methods development, isolation of novel chemoautotrophs, and high-throughput isolation of Alphaproteobacteria."  
-  
-[[feature]]
-  icon = "fa-ship"
-  icon_pack = "fas"
-  name = "Cruise / Field Work"
-  description = "High-pressure cultivation experience for deep-sea samples on 3 NSF-funded cruises (hydrothermal vents as well as deep-sea sediments)."
-
-+++
+# Uncomment to use custom SVG icons.
+# Place custom SVG icon in `assets/images/icon-pack/`, creating folders if necessary.
+# Reference the SVG icon name (without `.svg` extension) in the `icon` field.
+#- icon: "your-custom-icon-name"
+#  icon_pack: "custom"
+#  name: "Surfing"
+#  description: "90%"
+---
